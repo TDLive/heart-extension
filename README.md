@@ -1,5 +1,5 @@
 # Heart Collectors' Extension
-*Why type out a ♥ and press "Comment" when Chrome can do that for you?*
+*Why type out a ♥ and press "Comment" when Chrome can do that for you?**
 
 ## Install. How do?
 
@@ -19,3 +19,7 @@ Go to a valid profile that you have commenting rights on and press the magical h
 6. Praise the almighty sun gods.
 7. ??
 8. Profit!
+
+
+
+*not affiliated with the group.
