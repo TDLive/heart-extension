@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "Heart Poster",
+  "description": "Share the love by posting ♥s to Steam Community pages!",
+  "version": "1.0",
+
+  "permissions": [
+    "http://steamcommunity.com/",
+    "https://steamcommunity.com/",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://steamcommunity.com/*"],
+      "js": ["hearts.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "page_action": {
+    "default_icon": {
+      "19": "icon/ico-19.png",
+      "38": "icon/ico-38.png"
+    }
+  },
+
+  "icons": {
+    "16": "icon/ico-19.png",
+    "48": "icon/ico-48.jpg",
+    "128": "icon/ico-128.jpg"
+  }
+}
