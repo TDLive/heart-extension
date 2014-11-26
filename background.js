@@ -2,7 +2,7 @@ var tabMonitor = function(tab){
 
   while( ! tab.status == "complete" ) {}
 
-  if( tab.url.split("/").length > 4 && tab.url.split("/")[2] == "steamcommunity.com" && (tab.url.split("/")[3] == "id" || tab.url.split("/")[4] == "profiles") && tab.title.split("::").length > 1 ){
+  if( tab.url.split("/").length > 4 && tab.url.split("/")[2] == "steamcommunity.com" && (tab.url.split("/")[3] == "id" || tab.url.split("/")[3] == "profiles") && tab.title.split("::").length > 1 ){
     chrome.tabs.sendMessage(tab.id, {iLove: "me"}, function(isPrivate){
       if( isPrivate ) return;
       chrome.pageAction.show(tab.id);
